@@ -1,4 +1,4 @@
 package mptc.khay.domain.service;
 
-public interface OrderDomainServiceImp {
+public class OrderDomainServiceImp implements OrderDomainService {
 }
