@@ -9,6 +9,12 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>order-srervice-module</artifactId>
+    <artifactId>order-service-restapi</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>mptc.khay</groupId>
+            <artifactId>order-application-service</artifactId>
+        </dependency>
+    </dependencies>
 </project>

@@ -11,4 +11,10 @@
 
     <artifactId>order-service-persistence</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>mptc.khay</groupId>
+            <artifactId>order-application-service</artifactId>
+        </dependency>
+    </dependencies>
 </project>

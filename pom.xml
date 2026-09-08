@@ -27,12 +27,37 @@
             <dependency>
                 <groupId>mptc.khay</groupId>
                 <artifactId>common-domain</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>mptc.khay</groupId>
                 <artifactId>order-domain-core</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>mptc.khay</groupId>
+                <artifactId>order-application-service</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>mptc.khay</groupId>
+                <artifactId>order-service-messaging</artifactId>
+                <version>${project.version}</version>
+             </dependency>
+            <dependency>
+                <groupId>mptc.khay</groupId>
+                <artifactId>order-service-persistence</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>mptc.khay</groupId>
+                <artifactId>order-service-restapi</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>mptc.khay</groupId>
+                <artifactId>order-service-main</artifactId>
+                <version>${project.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
