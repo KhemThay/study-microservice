@@ -10,10 +10,23 @@
     </parent>
 
     <artifactId>order-service-main</artifactId>
+
     <dependencies>
         <dependency>
             <groupId>mptc.khay</groupId>
             <artifactId>order-application-service</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mptc.khay</groupId>
+            <artifactId>order-service-messaging</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mptc.khay</groupId>
+            <artifactId>order-service-persistence</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mptc.khay</groupId>
+            <artifactId>order-service-restapi</artifactId>
         </dependency>
     </dependencies>
 </project>
