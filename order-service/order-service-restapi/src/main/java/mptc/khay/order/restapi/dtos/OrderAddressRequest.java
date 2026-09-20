@@ -1,8 +1,7 @@
-package mptc.khay.order.restapi.dto;
+package mptc.khay.order.restapi.dtos;
 
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import jakarta.validation.constraints.Max;
 import lombok.Builder;
 
 @Builder

@@ -1,4 +1,4 @@
-package mptc.khay.order.restapi.dto;
+package mptc.khay.order.restapi.dtos;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;

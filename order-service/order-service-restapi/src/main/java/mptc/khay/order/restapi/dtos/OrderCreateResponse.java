@@ -1,4 +1,4 @@
-package mptc.khay.order.restapi.dto;
+package mptc.khay.order.restapi.dtos;
 
 import lombok.Builder;
 
