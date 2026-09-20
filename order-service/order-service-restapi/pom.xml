@@ -62,6 +62,14 @@
             <groupId>mptc.khay</groupId>
             <artifactId>common-restapi</artifactId>
         </dependency>
+        <dependency>
+            <groupId>mptc.khay</groupId>
+            <artifactId>order-application-service</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

@@ -11,13 +11,12 @@ import java.util.UUID;
 @Getter
 @Setter
 @NoArgsConstructor
-@IdClass(BusinessEntity.class)
+@IdClass(BusinessIdEntity.class)
 @Entity
 @Table(name = "businesses")
 public class BusinessEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID businessId;
 
     @Id
