@@ -22,14 +22,14 @@ public interface OrderPersistenceMapper {
     @Mapping(source = "productPrice", target = "price.amount")
     Product businessEntityToProduct(BusinessEntity businessEntity);
 
-    // The businesses table has one row per product, so every row carries the same business id and active flag
     default Business businessEntitiesToBusiness(List<BusinessEntity> businessEntities) {
         BusinessEntity businessEntity = businessEntities.getFirst();
         return Business.builder()
                 .id(new BusinessId(businessEntity.getBusinessId()))
                 .active(Boolean.TRUE.equals(businessEntity.getBusinessActive()))
-                .products(businessEntities.stream().map(this::businessEntityToProduct).toList())
+                .products(businessEntities.stream()
+                        .map(this::businessEntityToProduct)
+                        .toList())
                 .build();
     }
-
 }

@@ -20,10 +20,8 @@ public class BusinessRepositoryAdapter implements BusinessRepository {
     private final OrderPersistenceMapper orderPersistenceMapper;
 
     @Override
-    public Optional<Business> findBusiness(UUID businessId, List<UUID> productIds) {
-        List<BusinessEntity> businessEntities =
-                businessJpaRepository.findByBusinessIdAndProductIdIn(businessId, productIds);
-
+    public Optional<Business> findBusiness(UUID businessId) {
+        List<BusinessEntity> businessEntities = businessJpaRepository.findByBusinessId(businessId);
         if (businessEntities.isEmpty()) {
             return Optional.empty();
         }
